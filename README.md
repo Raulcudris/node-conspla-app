@@ -1,9 +1,6 @@
 # Notas:
 Este es un programa en consola de node (Crud)
 
-==========================
-  Seleccione una opción
-==========================
 
 ? ¿Qué desea hacer? (Use arrow keys)
 > 1. Crear tarea
