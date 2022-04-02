@@ -136,12 +136,12 @@ const mostrarListadoChecklist = async(tareas = []) => {
         return{
             value: tarea.id,
             name: `${idx} ${tarea.desc}`,
-            checked: true
+            checked: (tarea.completadoEn ) ? true : false
         }
       
     });
 
-    const preguntas = [
+    const pregunta = [
         {
             type: 'checkbox',
             name: 'ids',
@@ -149,9 +149,10 @@ const mostrarListadoChecklist = async(tareas = []) => {
             choices
         }
     ]
-    const {ids} = await inquirer.prompt(preguntas);
+    const {ids} = await inquirer.prompt(pregunta);
     return ids; 
 }
+
 
 module.exports = {
     inquirerMenu,

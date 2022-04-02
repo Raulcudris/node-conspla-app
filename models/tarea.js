@@ -12,6 +12,8 @@ class Tarea {
         this.desc = desc;
         this.completadoEn = null;
     }
+
+   
 }
 module.exports = Tarea;
 
